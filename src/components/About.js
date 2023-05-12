@@ -38,7 +38,7 @@ function About() {
           on security and continuous improvement through the latest technologies and industry trends ensures that my
           products are reliable, scalable, and ahead of the curve. I enjoy tinkering with new technologies and staying
           up-to-date with industry trends. Thanks for visiting my site! Feel free to reach out if you have any questions
-          or project ideas you'd like to discuss.
+          or project ideas you had like to discuss
         </p>
       </div>
     </motion.div>
