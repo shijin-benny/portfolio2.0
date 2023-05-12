@@ -9,6 +9,7 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import shijin from "../../public/shijin.jpg";
+import Image from "next/image";
 
 function Home() {
   return (
@@ -45,10 +46,12 @@ function Home() {
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            <img
+            <Image
+              width={100}
+              height={100}
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer object-cover"
               src={shijin.src}
-              alt=""
+              alt="shijin-benny"
             />
           </div>
         </footer>

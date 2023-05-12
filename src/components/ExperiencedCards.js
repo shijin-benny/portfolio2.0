@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 function ExperiencedCards(props) {
   return (
@@ -21,7 +22,14 @@ function ExperiencedCards(props) {
         <p className="font-bold text-xl mt-1">{props?.data?.companyName}</p>
         <div className="flex space-x-2 my-2">
           {props.data.technologies.map((items, i) => (
-            <img key={i} className="h-8 w-8 rounded-full object-contain" src={items?.src} alt="" />
+            <Image
+              width={100}
+              height={100}
+              key={i}
+              className="h-8 w-8 rounded-full object-contain"
+              src={items?.src}
+              alt=""
+            />
           ))}
 
           {/* Tech used */}

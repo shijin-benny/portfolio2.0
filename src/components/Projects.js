@@ -17,6 +17,7 @@ import nextjs from "../../public/nextjs.png";
 import spotifyicon from "../../public/spotifyicon.png";
 import nextAuth from "../../public/nextAuth.png";
 import recoil from "../../public/recoil.jpg";
+import Image from "next/image";
 
 function Projects() {
   const projects = [
@@ -89,7 +90,7 @@ function Projects() {
               </h4>
               <div className="flex justify-center items-center space-x-5">
                 {project.technologies.map((items, i) => (
-                  <img key={i} className="h-5 w-5 md:w-10 md:h-10" src={items.src} alt="" />
+                  <Image width={100} height={100} key={i} className="h-5 w-5 md:w-10 md:h-10" src={items.src} alt="" />
                 ))}
               </div>
               <p className="text-base md:text-lg text-center md:text-left">{project.description}</p>
